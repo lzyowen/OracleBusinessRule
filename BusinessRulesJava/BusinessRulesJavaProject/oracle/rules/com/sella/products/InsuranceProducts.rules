@@ -1,0 +1,1003 @@
+<?xml version="1.0"?>
+<RuleDictionary id="G}3d6ed4a:164ff39bb3a:-7ffe" xmlns="http://xmlns.oracle.com/rules/dictionary">
+  <Name>InsuranceProducts</Name>
+  <Alias>InsuranceProducts</Alias>
+  <Package>com.sella.products</Package>
+  <Version>12.1.1.0.0</Version>
+  <DataModel id="L}1">
+    <CreationUpdateNumber>2</CreationUpdateNumber>
+    <QualifierPattern>{member} of {fact}</QualifierPattern>
+    <JavaFactType id="J}com.sella.facts.Person">
+      <Name>com.sella.facts.Person</Name>
+      <Alias>Person</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>2</CreationUpdateNumber>
+      <Property id="J}com.sella.facts.Person.{age}">
+        <Name>age</Name>
+        <Alias>age</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <IDofType>J}int</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>int</Type>
+        <IDofBucketSet>G}3d6ed4a:164ff39bb3a:-7c22</IDofBucketSet>
+        <BucketSet>Age</BucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}23">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}com.sella.facts.Person.{dob}">
+        <Name>dob</Name>
+        <Alias>dob</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <IDofType>J}oracle.jbo.domain.Timestamp</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>oracle.jbo.domain.Timestamp</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}24">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}com.sella.facts.Person.{policy_type}">
+        <Name>policy_type</Name>
+        <Alias>policy_type</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <IDofType>J}com.sella.facts.Person$PolicyType</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>Person$PolicyType</Type>
+        <IDofBucketSet>G}3d6ed4a:164ff39bb3a:-7c29</IDofBucketSet>
+        <BucketSet>Person$PolicyType</BucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}25">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Method id="J}public oracle.jbo.domain.Timestamp com.sella.facts.Person.getDob()">
+        <Name>getDob</Name>
+        <Alias>getDob</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}12">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}oracle.jbo.domain.Timestamp</IDofType>
+        <Type>oracle.jbo.domain.Timestamp</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void com.sella.facts.Person.setPolicy_type(com.sella.facts.Person$PolicyType)">
+        <Name>setPolicy_type</Name>
+        <Alias>setPolicy_type</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <OverloadedParameter id="G}3d6ed4a:164ff39bb3a:-7c31">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <IDsOfType>J}com.sella.facts.Person$PolicyType</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}14">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public com.sella.facts.Person$PolicyType com.sella.facts.Person.getPolicy_type()">
+        <Name>getPolicy_type</Name>
+        <Alias>getPolicy_type</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}16">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}com.sella.facts.Person$PolicyType</IDofType>
+        <Type>Person$PolicyType</Type>
+        <IDofBucketSet>G}3d6ed4a:164ff39bb3a:-7c29</IDofBucketSet>
+        <BucketSet>Person$PolicyType</BucketSet>
+      </Method>
+      <Method id="J}public void com.sella.facts.Person.setAge(int)">
+        <Name>setAge</Name>
+        <Alias>setAge</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <OverloadedParameter id="G}3d6ed4a:164ff39bb3a:-7c30">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <IDsOfType>J}int</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}18">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public int com.sella.facts.Person.getAge()">
+        <Name>getAge</Name>
+        <Alias>getAge</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}20">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}int</IDofType>
+        <Type>int</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void com.sella.facts.Person.setDob(oracle.jbo.domain.Timestamp)">
+        <Name>setDob</Name>
+        <Alias>setDob</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <OverloadedParameter id="G}3d6ed4a:164ff39bb3a:-7c2f">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <IDsOfType>J}oracle.jbo.domain.Timestamp</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}22">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Constructor id="J}public com.sella.facts.Person()">
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Visible>true</Visible>
+        <Modifiers id="L}10">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+      </Constructor>
+      <IDofSuperClass>J}java.lang.Object</IDofSuperClass>
+      <ValidationUpdateNumber>2</ValidationUpdateNumber>
+      <Source>file:///home/oracle/Downloads/BusinessRules_Java-master/BusinessRulesJava/BusinessRulesJavaProject/classes/</Source>
+      <IsArray>false</IsArray>
+      <IDofArrayComponentType>B}nil</IDofArrayComponentType>
+      <SupportXPath>false</SupportXPath>
+      <IsInterface>false</IsInterface>
+      <Modifiers id="L}8">
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Access>1</Access>
+        <isStatic>false</isStatic>
+        <isFinal>false</isFinal>
+        <isAbstract>false</isAbstract>
+      </Modifiers>
+      <EnumBucketSetID>B}nil</EnumBucketSetID>
+      <Timestamp>0</Timestamp>
+      <ENUM>false</ENUM>
+    </JavaFactType>
+    <JavaFactType id="J}com.sella.facts.Person$PolicyType">
+      <Name>com.sella.facts.Person$PolicyType</Name>
+      <Alias>Person$PolicyType</Alias>
+      <Visible>false</Visible>
+      <CreationUpdateNumber>2</CreationUpdateNumber>
+      <Field id="J}public static final com.sella.facts.Person$PolicyType com.sella.facts.Person$PolicyType.INDIVIDUAL">
+        <Name>INDIVIDUAL</Name>
+        <Alias>INDIVIDUAL</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <IDofType>J}com.sella.facts.Person$PolicyType</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>Person$PolicyType</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Final>true</Final>
+        <Static>true</Static>
+        <Modifiers id="L}50">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>true</isStatic>
+          <isFinal>true</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Enum>true</Enum>
+      </Field>
+      <Field id="J}public static final com.sella.facts.Person$PolicyType com.sella.facts.Person$PolicyType.GROUP">
+        <Name>GROUP</Name>
+        <Alias>GROUP</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <IDofType>J}com.sella.facts.Person$PolicyType</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>Person$PolicyType</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Final>true</Final>
+        <Static>true</Static>
+        <Modifiers id="L}52">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>true</isStatic>
+          <isFinal>true</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Enum>true</Enum>
+      </Field>
+      <Field id="J}public static final com.sella.facts.Person$PolicyType com.sella.facts.Person$PolicyType.UNKNOWN">
+        <Name>UNKNOWN</Name>
+        <Alias>UNKNOWN</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <IDofType>J}com.sella.facts.Person$PolicyType</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>Person$PolicyType</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Final>true</Final>
+        <Static>true</Static>
+        <Modifiers id="L}54">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>true</isStatic>
+          <isFinal>true</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Enum>true</Enum>
+      </Field>
+      <Property id="J}com.sella.facts.Person$PolicyType.{declaringClass}">
+        <Name>declaringClass</Name>
+        <Alias>declaringClass</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <IDofType>J}java.lang.Class</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>java.lang.Class</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>false</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}48">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Method id="J}public static com.sella.facts.Person$PolicyType[] com.sella.facts.Person$PolicyType.values()">
+        <Name>values</Name>
+        <Alias>values</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}29">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>true</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>true</Static>
+        <IDofType>J}[Lcom.sella.facts.Person$PolicyType;</IDofType>
+        <Type>Person$PolicyType[]</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public static com.sella.facts.Person$PolicyType com.sella.facts.Person$PolicyType.valueOf(java.lang.String)">
+        <Name>valueOf</Name>
+        <Alias>valueOf</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <OverloadedParameter id="G}3d6ed4a:164ff39bb3a:-7c2e">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.String</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}31">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>true</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>true</Static>
+        <IDofType>J}com.sella.facts.Person$PolicyType</IDofType>
+        <Type>Person$PolicyType</Type>
+        <IDofBucketSet>G}3d6ed4a:164ff39bb3a:-7c29</IDofBucketSet>
+        <BucketSet>Person$PolicyType</BucketSet>
+      </Method>
+      <Method id="J}public final java.lang.String java.lang.Enum.name() declared in com.sella.facts.Person$PolicyType">
+        <Name>name</Name>
+        <Alias>name</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}33">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>true</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.lang.String</IDofType>
+        <Type>String</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public final boolean java.lang.Enum.equals(java.lang.Object) declared in com.sella.facts.Person$PolicyType">
+        <Name>equals</Name>
+        <Alias>equals</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <OverloadedParameter id="G}3d6ed4a:164ff39bb3a:-7c2d">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.Object</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}35">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>true</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}boolean</IDofType>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public java.lang.String java.lang.Enum.toString() declared in com.sella.facts.Person$PolicyType">
+        <Name>toString</Name>
+        <Alias>toString</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}37">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.lang.String</IDofType>
+        <Type>String</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public final int java.lang.Enum.hashCode() declared in com.sella.facts.Person$PolicyType">
+        <Name>hashCode</Name>
+        <Alias>hashCode</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}39">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>true</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}int</IDofType>
+        <Type>int</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public final int java.lang.Enum.compareTo(java.lang.Enum) declared in com.sella.facts.Person$PolicyType">
+        <Name>compareTo</Name>
+        <Alias>compareTo</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <OverloadedParameter id="G}3d6ed4a:164ff39bb3a:-7c2c">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.Enum</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}41">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>true</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}int</IDofType>
+        <Type>int</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public static java.lang.Enum java.lang.Enum.valueOf(java.lang.Class,java.lang.String) declared in com.sella.facts.Person$PolicyType">
+        <Name>valueOf</Name>
+        <Alias>valueOf_1</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <OverloadedParameter id="G}3d6ed4a:164ff39bb3a:-7c2b">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.Class</IDsOfType>
+        </OverloadedParameter>
+        <OverloadedParameter id="G}3d6ed4a:164ff39bb3a:-7c2a">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.String</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}43">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>true</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>true</Static>
+        <IDofType>J}java.lang.Enum</IDofType>
+        <Type>java.lang.Enum</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public final java.lang.Class java.lang.Enum.getDeclaringClass() declared in com.sella.facts.Person$PolicyType">
+        <Name>getDeclaringClass</Name>
+        <Alias>getDeclaringClass</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}45">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>true</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.lang.Class</IDofType>
+        <Type>java.lang.Class</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public final int java.lang.Enum.ordinal() declared in com.sella.facts.Person$PolicyType">
+        <Name>ordinal</Name>
+        <Alias>ordinal</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}47">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>true</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}int</IDofType>
+        <Type>int</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <IDofSuperClass>J}java.lang.Enum</IDofSuperClass>
+      <ValidationUpdateNumber>2</ValidationUpdateNumber>
+      <Source>file:///home/oracle/Downloads/BusinessRules_Java-master/BusinessRulesJava/BusinessRulesJavaProject/classes/</Source>
+      <IsArray>false</IsArray>
+      <IDofArrayComponentType>B}nil</IDofArrayComponentType>
+      <SupportXPath>false</SupportXPath>
+      <IsInterface>false</IsInterface>
+      <Modifiers id="L}27">
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Access>1</Access>
+        <isStatic>true</isStatic>
+        <isFinal>true</isFinal>
+        <isAbstract>false</isAbstract>
+      </Modifiers>
+      <EnumBucketSetID>G}3d6ed4a:164ff39bb3a:-7c29</EnumBucketSetID>
+      <EnumBucketSet>Person$PolicyType</EnumBucketSet>
+      <Timestamp>0</Timestamp>
+      <ENUM>true</ENUM>
+    </JavaFactType>
+    <JavaFactType id="J}com.sella.facts.Product">
+      <Name>com.sella.facts.Product</Name>
+      <Alias>Product</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>2</CreationUpdateNumber>
+      <Property id="J}com.sella.facts.Product.{name}">
+        <Name>name</Name>
+        <Alias>name</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <IDofType>J}java.lang.String</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>String</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}69">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Method id="J}public java.lang.String com.sella.facts.Product.getName()">
+        <Name>getName</Name>
+        <Alias>getName</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Modifiers id="L}66">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.lang.String</IDofType>
+        <Type>String</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void com.sella.facts.Product.setName(java.lang.String)">
+        <Name>setName</Name>
+        <Alias>setName</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <OverloadedParameter id="G}3d6ed4a:164ff39bb3a:-7c23">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.String</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}68">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Constructor id="J}public com.sella.facts.Product()">
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Visible>true</Visible>
+        <Modifiers id="L}64">
+          <CreationUpdateNumber>2</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+      </Constructor>
+      <IDofSuperClass>J}java.lang.Object</IDofSuperClass>
+      <ValidationUpdateNumber>2</ValidationUpdateNumber>
+      <Source>file:///home/oracle/Downloads/BusinessRules_Java-master/BusinessRulesJava/BusinessRulesJavaProject/classes/</Source>
+      <IsArray>false</IsArray>
+      <IDofArrayComponentType>B}nil</IDofArrayComponentType>
+      <SupportXPath>false</SupportXPath>
+      <IsInterface>false</IsInterface>
+      <Modifiers id="L}62">
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Access>1</Access>
+        <isStatic>false</isStatic>
+        <isFinal>false</isFinal>
+        <isAbstract>false</isAbstract>
+      </Modifiers>
+      <EnumBucketSetID>B}nil</EnumBucketSetID>
+      <Timestamp>0</Timestamp>
+      <ENUM>false</ENUM>
+    </JavaFactType>
+    <BucketSet id="G}3d6ed4a:164ff39bb3a:-7c29">
+      <Name>Person$PolicyType</Name>
+      <Alias>Person$PolicyType</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>2</CreationUpdateNumber>
+      <IDofType>J}com.sella.facts.Person$PolicyType</IDofType>
+      <ListContentID>B}nil</ListContentID>
+      <Type>Person$PolicyType</Type>
+      <Form>Enum</Form>
+      <Bucket id="G}3d6ed4a:164ff39bb3a:-7c27">
+        <Name>Person$PolicyType.INDIVIDUAL</Name>
+        <Alias>INDIVIDUAL</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Inclusive>false</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}57">
+          <Value>Person$PolicyType.INDIVIDUAL</Value>
+          <ResolvedValue>`G}3d6ed4a:164ff39bb3a:-7c29`.`J}public static final com.sella.facts.Person$PolicyType com.sella.facts.Person$PolicyType.INDIVIDUAL`</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}3d6ed4a:164ff39bb3a:-7c26">
+        <Name>Person$PolicyType.GROUP</Name>
+        <Alias>GROUP</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Inclusive>false</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}58">
+          <Value>Person$PolicyType.GROUP</Value>
+          <ResolvedValue>`G}3d6ed4a:164ff39bb3a:-7c29`.`J}public static final com.sella.facts.Person$PolicyType com.sella.facts.Person$PolicyType.GROUP`</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}3d6ed4a:164ff39bb3a:-7c25">
+        <Name>Person$PolicyType.UNKNOWN</Name>
+        <Alias>UNKNOWN</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Inclusive>false</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}59">
+          <Value>Person$PolicyType.UNKNOWN</Value>
+          <ResolvedValue>`G}3d6ed4a:164ff39bb3a:-7c29`.`J}public static final com.sella.facts.Person$PolicyType com.sella.facts.Person$PolicyType.UNKNOWN`</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}3d6ed4a:164ff39bb3a:-7c24">
+        <Name>null</Name>
+        <Alias>null</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Inclusive>false</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}60">
+          <Value>null</Value>
+          <ResolvedValue>null</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <CalendarForm>Date</CalendarForm>
+      <Excluded>false</Excluded>
+      <ValidationUpdateNumber>2</ValidationUpdateNumber>
+    </BucketSet>
+    <BucketSet id="G}3d6ed4a:164ff39bb3a:-7c22">
+      <Name>Age</Name>
+      <Alias>Age</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>2</CreationUpdateNumber>
+      <IDofType>J}int</IDofType>
+      <ListContentID>B}nil</ListContentID>
+      <Type>int</Type>
+      <Form>Range</Form>
+      <Bucket id="G}3d6ed4a:164ff39bb3a:-7c21">
+        <Name>&lt;0</Name>
+        <Alias>&lt;0</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Inclusive>true</Inclusive>
+        <Otherwise>true</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}70">
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}3d6ed4a:164ff39bb3a:-7c20">
+        <Name>[0..18)</Name>
+        <Alias>Minor</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Inclusive>true</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}71">
+          <Value>0</Value>
+          <ResolvedValue>0</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}3d6ed4a:164ff39bb3a:-7c1f">
+        <Name>[18..50)</Name>
+        <Alias>Junior</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Inclusive>true</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}72">
+          <Value>18</Value>
+          <ResolvedValue>18</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}3d6ed4a:164ff39bb3a:-7c1e">
+        <Name>[50..75)</Name>
+        <Alias>Middle</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Inclusive>true</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}73">
+          <Value>50</Value>
+          <ResolvedValue>50</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}3d6ed4a:164ff39bb3a:-7c1d">
+        <Name>&gt;=75</Name>
+        <Alias>Senior</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>2</CreationUpdateNumber>
+        <Inclusive>true</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}74">
+          <Value>75</Value>
+          <ResolvedValue>75</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <CalendarForm>Date</CalendarForm>
+      <Excluded>false</Excluded>
+      <ValidationUpdateNumber>2</ValidationUpdateNumber>
+    </BucketSet>
+    <SupportsXPathEnabled>false</SupportsXPathEnabled>
+    <DecisionFunction id="G}3d6ed4a:164ff39bb3a:-7c1c">
+      <Name>ProductRuleDecisionService</Name>
+      <Alias>ProductRuleDecisionService</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>3</CreationUpdateNumber>
+      <WebService>false</WebService>
+      <CheckRuleFlow>true</CheckRuleFlow>
+      <Stateless>true</Stateless>
+      <DecisionFunctionInput id="G}3d6ed4a:164ff39bb3a:-7c1a">
+        <Name>input</Name>
+        <Alias>input</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <IDofType>J}com.sella.facts.Person</IDofType>
+        <List>false</List>
+        <Tree>false</Tree>
+      </DecisionFunctionInput>
+      <DecisionFunctionRuleSet id="L}77">
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Form>rule set</Form>
+        <Ruleset>ProductRuleDecisionService</Ruleset>
+        <refID>G}3d6ed4a:164ff39bb3a:-7c1b</refID>
+      </DecisionFunctionRuleSet>
+      <DecisionFunctionOutput id="G}3d6ed4a:164ff39bb3a:-7c19">
+        <Name>output</Name>
+        <Alias>output</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <IDofType>J}com.sella.facts.Product</IDofType>
+        <List>true</List>
+        <Tree>false</Tree>
+      </DecisionFunctionOutput>
+      <ValidationUpdateNumber>5</ValidationUpdateNumber>
+      <RuleFiringLimit>10000</RuleFiringLimit>
+      <RuleFiringLimitError>true</RuleFiringLimitError>
+      <UniqueRulesets>false</UniqueRulesets>
+    </DecisionFunction>
+    <UpdateNumber>4</UpdateNumber>
+    <ValidationUpdateNumber>5</ValidationUpdateNumber>
+    <UpdateTime>0</UpdateTime>
+  </DataModel>
+  <RuleSet id="G}3d6ed4a:164ff39bb3a:-7c1b">
+    <Name>ProductRuleDecisionService</Name>
+    <Alias>ProductRuleDecisionService</Alias>
+    <ValidationUpdateNumber>5</ValidationUpdateNumber>
+    <Active>true</Active>
+    <CalendarForm>DateTime</CalendarForm>
+    <Rule id="G}3d6ed4a:164ff39bb3a:-7c18">
+      <Name>AgeLess20Rule</Name>
+      <Alias>AgeLess20Rule</Alias>
+      <ValidationUpdateNumber>5</ValidationUpdateNumber>
+      <Priority>medium</Priority>
+      <Active>true</Active>
+      <CalendarForm>DateTime</CalendarForm>
+      <TreeMode>false</TreeMode>
+      <Visible>true</Visible>
+      <SimpleTest id="L}98">
+        <FactType>Person</FactType>
+        <IDofFactType>J}com.sella.facts.Person</IDofFactType>
+        <FactPath>Person</FactPath>
+        <FactPathIDs>L}98</FactPathIDs>
+        <Form>FormIsA</Form>
+        <IDofOperator>B}==</IDofOperator>
+        <Connective>&amp;&amp;</Connective>
+        <Visible>true</Visible>
+        <DSLId>B}nil</DSLId>
+      </SimpleTest>
+      <SimpleTest id="L}99">
+        <IDofFactType>B}nil</IDofFactType>
+        <Form>FormNotNested</Form>
+        <Expression id="L}100">
+          <Value>Person.age</Value>
+          <ResolvedValue>`L}98`.`J}com.sella.facts.Person.{age}`</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <Expression id="L}101">
+          <Value>20</Value>
+          <ResolvedValue>20</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <IDofOperator>B}&gt;</IDofOperator>
+        <Connective>&amp;&amp;</Connective>
+        <Visible>true</Visible>
+        <DSLId>B}nil</DSLId>
+      </SimpleTest>
+      <Pattern id="L}84">
+        <FactType>Person</FactType>
+        <IDofFactType>J}com.sella.facts.Person</IDofFactType>
+        <FactPath>Person</FactPath>
+        <FactPathIDs>L}84</FactPathIDs>
+        <Form>Fact Type</Form>
+        <Connective>&amp;&amp;</Connective>
+        <TestForm>Simple</TestForm>
+        <Expression id="L}85">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <Operator>(for each case where)</Operator>
+        <SimpleTest id="L}86">
+          <IDofFactType>B}nil</IDofFactType>
+          <Form>FormNotNested</Form>
+          <Expression id="L}87">
+            <Value>Person.age</Value>
+            <ResolvedValue>`L}84`.`J}com.sella.facts.Person.{age}`</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterID>B}nil</ParameterID>
+          </Expression>
+          <Expression id="L}88">
+            <Value>20</Value>
+            <ResolvedValue>20</ResolvedValue>
+            <IsConstant>true</IsConstant>
+            <ParameterID>B}nil</ParameterID>
+          </Expression>
+          <IDofOperator>B}&gt;</IDofOperator>
+          <Connective>&amp;&amp;</Connective>
+          <Visible>true</Visible>
+          <DSLId>B}nil</DSLId>
+        </SimpleTest>
+      </Pattern>
+      <ShowPatterns>false</ShowPatterns>
+      <Logical>false</Logical>
+      <Action id="L}89">
+        <Form>Assert New</Form>
+        <Target>Product</Target>
+        <ResolvedTarget>`J}public com.sella.facts.Product()`</ResolvedTarget>
+        <Expression id="L}90">
+          <Value>&quot;Child Care&quot;</Value>
+          <ResolvedValue>&quot;Child Care&quot;</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>name</ParameterAlias>
+          <ParameterID>J}com.sella.facts.Product.{name}</ParameterID>
+        </Expression>
+        <DSLId>B}nil</DSLId>
+      </Action>
+    </Rule>
+    <Rule id="G}3d6ed4a:164ff39bb3a:-7c17">
+      <Name>AgeExceed20Rule</Name>
+      <Alias>AgeExceed20Rule</Alias>
+      <ValidationUpdateNumber>5</ValidationUpdateNumber>
+      <Priority>medium</Priority>
+      <Active>true</Active>
+      <CalendarForm>DateTime</CalendarForm>
+      <TreeMode>false</TreeMode>
+      <Visible>true</Visible>
+      <SimpleTest id="L}102">
+        <FactType>Person</FactType>
+        <IDofFactType>J}com.sella.facts.Person</IDofFactType>
+        <FactPath>Person</FactPath>
+        <FactPathIDs>L}102</FactPathIDs>
+        <Form>FormIsA</Form>
+        <IDofOperator>B}==</IDofOperator>
+        <Connective>&amp;&amp;</Connective>
+        <Visible>true</Visible>
+        <DSLId>B}nil</DSLId>
+      </SimpleTest>
+      <SimpleTest id="L}103">
+        <IDofFactType>B}nil</IDofFactType>
+        <Form>FormNotNested</Form>
+        <Expression id="L}104">
+          <Value>Person.age</Value>
+          <ResolvedValue>`L}102`.`J}com.sella.facts.Person.{age}`</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <Expression id="L}105">
+          <Value>20</Value>
+          <ResolvedValue>20</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <IDofOperator>B}&lt;</IDofOperator>
+        <Connective>&amp;&amp;</Connective>
+        <Visible>true</Visible>
+        <DSLId>B}nil</DSLId>
+      </SimpleTest>
+      <Pattern id="L}91">
+        <FactType>Person</FactType>
+        <IDofFactType>J}com.sella.facts.Person</IDofFactType>
+        <FactPath>Person</FactPath>
+        <FactPathIDs>L}91</FactPathIDs>
+        <Form>Fact Type</Form>
+        <Connective>&amp;&amp;</Connective>
+        <TestForm>Simple</TestForm>
+        <Expression id="L}92">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <Operator>(for each case where)</Operator>
+        <SimpleTest id="L}93">
+          <IDofFactType>B}nil</IDofFactType>
+          <Form>FormNotNested</Form>
+          <Expression id="L}94">
+            <Value>Person.age</Value>
+            <ResolvedValue>`L}91`.`J}com.sella.facts.Person.{age}`</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterID>B}nil</ParameterID>
+          </Expression>
+          <Expression id="L}95">
+            <Value>20</Value>
+            <ResolvedValue>20</ResolvedValue>
+            <IsConstant>true</IsConstant>
+            <ParameterID>B}nil</ParameterID>
+          </Expression>
+          <IDofOperator>B}&lt;</IDofOperator>
+          <Connective>&amp;&amp;</Connective>
+          <Visible>true</Visible>
+          <DSLId>B}nil</DSLId>
+        </SimpleTest>
+      </Pattern>
+      <ShowPatterns>false</ShowPatterns>
+      <Logical>false</Logical>
+      <Action id="L}96">
+        <Form>Assert New</Form>
+        <Target>Product</Target>
+        <ResolvedTarget>`J}public com.sella.facts.Product()`</ResolvedTarget>
+        <Expression id="L}97">
+          <Value>&quot;People Care&quot;</Value>
+          <ResolvedValue>&quot;People Care&quot;</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>name</ParameterAlias>
+          <ParameterID>J}com.sella.facts.Product.{name}</ParameterID>
+        </Expression>
+        <DSLId>B}nil</DSLId>
+      </Action>
+    </Rule>
+    <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
+    <CreationUpdateNumber>3</CreationUpdateNumber>
+  </RuleSet>
+  <ValidationUpdateNumber>5</ValidationUpdateNumber>
+  <UpdateNumber>5</UpdateNumber>
+  <TestModel id="L}3">
+    <ValidationUpdateNumber>1</ValidationUpdateNumber>
+    <UpdateNumber>1</UpdateNumber>
+    <Validation>true</Validation>
+    <AutoSync>true</AutoSync>
+  </TestModel>
+  <Preferences id="G}3d6ed4a:164ff39bb3a:-7ffd">
+    <RulesExecutionAlgorithm>RETE</RulesExecutionAlgorithm>
+    <DisallowErrorSuppression>false</DisallowErrorSuppression>
+    <PhraseSuggestions>All</PhraseSuggestions>
+    <RestrictAutoSuggestions>true</RestrictAutoSuggestions>
+    <IncludeChainedExpressions>true</IncludeChainedExpressions>
+  </Preferences>
+</RuleDictionary>
